@@ -1,0 +1,122 @@
+.warrantyContent {
+    padding: 60px 0;
+}
+
+.title {
+    font-size: 48px;
+    line-height: 160%;
+    text-align: center;
+}
+
+.subTitle {
+    max-width: 480px;
+    font-size: 24px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.warrantyWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.warrantyWrapper p {
+    text-align: center;
+    padding-top: 6px;
+}
+
+.warrantyContainer {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
+.warrantyTitle h3 {
+    width: 460px;
+}
+
+.warrantyContainer p {
+    margin-top: 10px;
+}
+
+.warrantyImgContainer {
+    width: 320px;
+    margin: 0 20px;
+
+}
+
+.warrantyImgContainer:first-child {
+    margin-left: 0;
+}
+
+.warrantyImgContainer:last-child {
+    margin-right: 0;
+}
+
+.warrantyImg {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+}
+
+.warrantyImg img {
+    transition: all .2s ease-in-out;
+}
+
+.warrantyImg:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width:998px) {
+    .warrantyImgContainer {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .warrantyImg {
+        height: 280px;
+    }
+
+    .warrantyTitle h3 {
+        width: 360px;
+        font-size: 36px;
+    }
+}
+
+@media (max-width:767px) {
+    .warrantyContent {
+        padding: 40px 0;
+    }
+
+    .title {
+        font-size: 42px;
+    }
+
+    .subTitle {
+        font-size: 18px;
+    }
+
+    .warrantyContainer {
+        display: block;
+        padding-top: 40px;
+    }
+
+    .warrantyTitle {
+        margin-bottom: 10px;
+    }
+
+    .warrantyWrapper {
+        display: block;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .warrantyImgContainer {
+        margin: 0;
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,103 @@
+/* Shoes Contant */
+.container {
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: 30px;
+
+}
+
+.cardWrapper, .link {
+    display: flex;
+    align-items: center;
+
+}
+
+.link {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.link svg {
+    margin-left: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.link:hover svg {
+    transform: translateX(5px);
+}
+
+/* Shoes Card */
+.shoeImg {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shoeImg:first-child {
+    margin-left: 0;
+}
+
+.shoeImg:last-child {
+    margin-right: 0;
+}
+
+.collImage {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.collImage img {
+    transition: all .2s ease-in-out;
+}
+
+.collImage:hover img {
+    transform: scale(1.1);
+}
+
+.collTitle, .collPrice {
+    font-size: 14px;
+    padding-top: 6px;
+}
+.collTitle {
+    font-weight: 400;
+}
+
+@media (max-width:998px) {
+    .container {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width:767px) {
+    .titleWrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .collImage {
+        height: 250px;
+    }
+
+    .titleWrapper h3 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .link {
+        font-size: 14px;
+    }
+}
